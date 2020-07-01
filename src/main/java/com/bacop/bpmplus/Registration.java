@@ -6,12 +6,35 @@ package com.bacop.bpmplus;
 
 public class Registration implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Registration() {
-    }
+	@org.kie.api.definition.type.Label(value = "Key 1")
+	private java.lang.String key1;
+	@org.kie.api.definition.type.Label(value = "Date")
+	private java.time.LocalDateTime date;
 
+	public Registration() {
+	}
 
+	public java.lang.String getKey1() {
+		return this.key1;
+	}
 
+	public void setKey1(java.lang.String key1) {
+		this.key1 = key1;
+	}
+
+	public java.time.LocalDateTime getDate() {
+		return this.date;
+	}
+
+	public void setDate(java.time.LocalDateTime date) {
+		this.date = date;
+	}
+
+	public Registration(java.lang.String key1, java.time.LocalDateTime date) {
+		this.key1 = key1;
+		this.date = date;
+	}
 
 }
