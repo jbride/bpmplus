@@ -36,5 +36,11 @@ public class Registration implements java.io.Serializable {
 		this.key1 = key1;
 		this.date = date;
 	}
+	
+	public String toString(){
+	    StringBuilder sBuilder = new StringBuilder():
+	    sBuilder.append("key1: "+ key1);
+	    return sBuilder.toString():
+	}
 
 }
