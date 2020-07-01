@@ -36,5 +36,11 @@ public class Person implements java.io.Serializable {
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
+	
+	public String toString() {
+	    StringBuilder sBuilder = new StringBuilder();
+	    sBuilder.append("firstName: " +firstName);
+	    sBuilder.append("\tlastName: "+lastName);
+	}
 
 }
